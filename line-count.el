@@ -25,6 +25,7 @@
 
 (defun line-count (start end)
   (interactive "r")
+  (save-buffer)
   (if (use-region-p)
-      (print-result (get-selected-text start end))
+      (print-result (text-from-region start end))
     (print-result (read-lines (buffer-file-name (current-buffer)))))) 
