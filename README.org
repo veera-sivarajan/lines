@@ -1,0 +1,3 @@
+* Lines
+- An interactive function to count the number of nonempty lines and empty lines in current buffer. 
+- Counts selected lines if a region is selected else counts the entire file. 
